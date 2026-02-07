@@ -15,3 +15,6 @@ example output:
 example performance graph:
 The x axis is the number input to the `fib()` function, and the y axis is the time taken for that input.
 ![](images/fib_time_per_input.png)
+
+Making the graph is disabled by default and therefore the packages in requirements.txt aren't strictly required for the file to run.
+
