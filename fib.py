@@ -1,7 +1,12 @@
 from functools import lru_cache
 from time import perf_counter
-import matplotlib.pyplot as plt
-import pandas as pd
+
+try:
+    import matplotlib.pyplot as plt
+    import pandas as pd
+except Exception:
+    plt = None
+    pd = None
 
 use_graph = False
 graph_data = {}
