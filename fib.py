@@ -14,7 +14,8 @@ def timer(f):
         t1 = perf_counter()
         ts = t1 - t0
         print(f"finished in {ts}s: f{*args,kwargs} -> {n}")
-        graph_data[args[0]] = ts
+        if use_graph:
+            graph_data[args[0]] = ts
         return n
 
     return timer_wrapper
